@@ -38,5 +38,10 @@ else
 {
 	echo "ERROR:Could not able to execute $sql.".mysqli_error($conn);
 }
+$sql1="insert into employees (firstname,lastname,age) values('ram','singh',25)";
+if(mysqli_query($conn,$sql1))
+{
+	echo "Records inserted successfully!";
+}
 mysqli_close($conn);
 ?>
